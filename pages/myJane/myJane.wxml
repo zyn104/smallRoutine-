@@ -1,0 +1,79 @@
+<!--myJane.wxml-->
+<view class="container">
+  <view class="title">
+    <text>请填简历内具体内容</text>
+  </view>
+  <view class="name user-name">
+    <text>姓名：</text>
+    <input></input>
+  </view>
+  <view class='name change'>
+      <label>性别：</label> 
+      <label class="ter"> 
+        <radio-group bindchange="radioChange">
+          <radio value="男" checked=""/> 男
+          <radio value="女" checked=""/> 女
+        </radio-group>
+      </label> 
+  </view>
+  <view class="name user-name">
+    <text>年龄：</text>
+    <input></input>
+  </view>
+  <view class='name change'>
+      <label>民族：</label> 
+      <label class="ter"> 
+        <radio-group bindchange="radioChange">
+          <radio value="汉族" checked=""/> 汉族
+          <radio value="少数" checked=""/> 少数
+        </radio-group>
+      </label> 
+  </view>
+  <view class="name phone">
+    <text>户籍地址：</text>
+    <input></input>
+  </view>
+  <view class="name place">
+    <text>现住址：</text>
+    <input></input>
+  </view>
+  <view class='name change marry'>
+      <label>婚姻状况：</label> 
+      <label class="ter"> 
+        <radio-group bindchange="radioChange">
+          <radio value="已婚" checked=""/> 已婚
+          <radio value="未婚" checked=""/> 未婚
+        </radio-group>
+      </label> 
+  </view>
+  <view class="name phone">
+    <text>联系电话：</text>
+    <input></input>
+  </view>
+  <view class="name personal-skills">
+    <view class="skills">
+      <text>个人技能：</text>
+      <text class="certificate">(专业证书,选填)</text>
+    </view>
+    <input type='text'></input>
+  </view>
+  <view class='name change marry'>
+      <label>工作状态：</label> 
+      <label class="ter"> 
+        <radio-group bindchange="radioChange">
+          <radio value="离职" checked=""/> 离职
+          <radio value="未离职" checked=""/> 未离职
+        </radio-group>
+      </label> 
+  </view>
+  <view class="name phone">
+    <text>工作经历：</text>
+     <input>123</input> 
+  </view>
+
+
+</view>
+  <view class='tabbar'>
+    <view bindtap='shou'>首页</view>
+    <view bindtap='me'>我的</view>
+  </view> 

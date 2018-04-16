@@ -1,0 +1,23 @@
+/*index.wxss*/
+ .entry{
+  padding-top: 20rpx
+} 
+.entry_w{
+  width: 90%;
+  margin-top: 20rpx;
+  background: #fff;
+  margin-left: auto;
+  border-radius: 5rpx;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+.entry_wn{
+  margin: 10rpx;
+  text-align: center
+}
+.entry_m{
+  width: 200rpx;
+  height: 200rpx;
+  display: block
+}

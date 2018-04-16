@@ -1,0 +1,43 @@
+<view class='myMap'>
+   <view class='myMap_top'>
+    <image src='../../images/sou.png'></image>
+    <input type='text' placeholder='输入城市名'></input>
+  </view>
+  <view class='myMap_home' bindtap='place'>
+    <view>家的位置</view>
+    <image src='../../images/config.png'></image>
+  </view>
+  <view class='myMap_place'>
+    <view class='place_left'>
+      <view class='home_place'>
+        <view>{{name}}</view>
+      </view>
+    </view>
+    <view class='place_right'>
+      <view>热门</view>
+    </view>
+  </view> 
+  <view class="searchLetter touchClass">
+    <view wx:for="{{searchLetter}}" style="height:{{itemH}}px" wx:key="index" data-letter="{{item.name}}" catchtouchstart="searchStart" catchtouchmove="searchMove" catchtouchend="searchEnd">
+      {{item.name}}
+    </view>
+  </view>
+  <block wx:if="{{isShowLetter}}">
+    <view class="showSlectedLetter">
+      {{showLetter}}
+    </view>
+  </block>
+  <view class='vv'>
+    <view class='vv_center'>
+      {{city}}
+    </view>
+  </view>
+  <scroll-view scroll-y="true" style="height:{{winHeight}}px" bindscroll="bindScroll" scroll-top="{{scrollTop}}">
+    <view class="selection" wx:for="{{cityList}}" wx:key="{{item.initial}}">
+      <view class="item_letter">{{item.initial}}</view>
+      <view class="item_city" wx:for="{{item.cityInfo}}" wx:for-item="ct" wx:key="{{ct.id}}" data-city="{{ct.city}}" bindtap="bindCity">
+        {{ct.city}} 
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,129 @@
+<!--index.wxml-->
+<view class='const'>
+   <view class='header'>
+       单位信息
+   </view>
+  <view class='row'>
+      <view class='font'>
+      <text class='rr'>*</text>单位名称:
+      </view>
+      <view class='righ'>
+      <label>
+          <input class="name" bindblur='lian' value='{{username}}'/> 
+       </label>
+      </view>
+  </view>
+
+   <view class='row'>
+      <view class='font'>
+      <text class='rr'>*</text>所在地:
+      </view>
+      <view class='righ'>
+      <label>
+ <!-- 下拉  -->
+        <view class='select_box names'>
+          <view class='select' catchtap='selectTap'>
+            <text class='select_text'>{{selectData[index].name}}</text> 
+          </view>
+          
+          <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+            <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item.name}}</text>
+          </view>
+       
+        </view>
+        <text class='ww'>省</text>
+<!-- end -->
+<!-- 下拉  -->
+         <view class='select_box namess'>
+        <view class='select' catchtap='selectsTap'>
+        <text class='select_text' style='width:100px' wx:for='{{selectDate[index]}}'>{{item[indexx].name}}</text> 
+        </view>
+        <view class='option_box' style='height:{{bb?(selectDate.length>5?300:selectDate.length*60):0}}rpx;'>
+        <text class='option' style='{{indexx==selectDate.length-1&&"border:0;"}}' wx:for='{{selectDate[index].city}}' wx:key='this' data-index='{{index}}' catchtap='optionsTap'>{{item.name}}</text>
+        </view>
+        </view> 
+        <text class='ww' >市</text>
+<!-- end -->
+         <!-- <input class="name" bindblur='addres' value='{{second}}' /> -->
+      </label>
+      </view>
+  </view>
+
+   <view class='row'>
+      <view class='font'>
+      <text class='rr'>*</text>联系人:
+      </view>
+      <view class='righ'>
+      <label>
+       <input class="contact" bindblur='peo' value='{{three}}'/>
+      <radio-group bindchange="radioChange" class="ra"> 
+         <radio value="男" checked="checked"  />男
+         <radio value="女" checked="" class=''/>女
+      </radio-group> 
+      </label>
+      </view>
+  </view>
+
+   <view class='row'>
+      <view class='font'>
+      <text class='rr'>*</text>联系电话:
+      </view>
+      <view class='righ' >
+      <label>
+         <input class="name" maxlength='11' placeholder="手机号码" bindblur='tel' value='{{four}}'   />
+       </label>
+      </view>
+  </view>
+
+<view class='row'>
+      <view class='font'>
+      <text class='rr'>*</text>验证码:
+      </view>
+      <view class='righ'>
+      <label>
+         <input class="contact" placeholder="验证码" bindinput='yan' value='{{five}}'/>
+         <button bindtap='getyan'>获取短信验证码</button>
+       </label>
+      </view>
+  </view>
+
+ <view class='header1'>
+       账户信息
+  </view>
+ <view class='row'>
+      <view class='font'>
+      <text class='rr'>*</text>电子邮箱:
+      </view>
+      <view class='righ'>
+      <label>
+         <input class="name" bindblur='email' value='{{six}}' />
+       </label>
+      </view>
+  </view>
+
+   <view class='row'>
+      <view class='font'>
+      <text class='rr'>*</text>用户名:
+      </view>
+      <view class='righ' id='yong'>
+      <label>
+         <input class="name" bindinput='user' value='{{seven}}' />
+       </label>
+      </view>
+  </view>
+
+ <view class='row'>
+      <view class='font'>
+      <text class='rr'>*</text>密码:
+      </view>
+      <view class='righ'>
+      <label>
+         <input class="name" bindinput='pwd' value='{{eight}}' type='password'/>
+       </label>
+      </view>
+  </view>
+
+   <view class='foot' bindtap="mytap">
+       免费注册
+   </view>
+</view>

@@ -1,0 +1,15 @@
+/* pages/enterprise/enterprise.wxss */
+.content{
+  width: 100%；
+}
+.register,.Sign{
+  width: 80%;
+  height: 100rpx;
+  background: #FFA00A;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+  margin: 50rpx;
+  margin-left: auto;
+  margin-right: auto
+}

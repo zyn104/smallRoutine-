@@ -1,0 +1,59 @@
+<view class='container'>
+  <view class='header'>
+    <image src='../../images/lp.jpg'></image>
+    <view class='head_h1'>猎聘</view>丨让职场人更成功
+  </view>
+  <view class='obj'>
+    <text>销售经理</text>
+    <view class='obj_con'>
+      <text class='obj_tx'>6-12万</text>
+      <text class='obj_fk'>平均5天反馈</text>
+    </view>
+    <view class='studyhist'>
+      <view>
+        <image src='../../images/th.png'></image>
+        <text>3年以上</text>
+      </view>
+      <view>
+        <image src='../../images/dd.png'></image>
+        <text>北京-前门</text>
+      </view>
+      <view>
+        <image src='../../images/st.png'></image>
+        <text>大专及以上</text>
+      </view>
+    </view>
+    <view class='address'>
+      <view class='add_le'>
+        <image src='../../images/gs.png'></image>
+      </view>
+      <view class='add_ri'>
+        <text>广州康普顿至高建材有限公司</text>
+        <text class='add_ri_tx'>建筑工程丨100-499人丨外商独资·外企办事处</text>
+      </view> 
+      
+    </view>
+  </view>
+  <view class='introduce'>
+    <view class='int_head'>
+      <view class='yell'></view>
+      <text>职位介绍</text>
+    </view>
+    <view class='jobs'>岗位职责:</view>
+    <text>1.公司产品销售，与公司各部门协调配合确保销售计划顺利完成</text>
+    <text>2.提供优质的售后服务，处理客户投诉，及时反馈质量问题</text>
+    <text>3.负责售后回款工作</text>
+    <text>4.开发客户，跟进项目，推广公司产品</text>
+    <view class='jobs'>技能要求:</view>
+    <text>1.性格外向，反应敏捷，表达能力强，具有较强的沟通能力及交际技巧，培训能力强，具有亲和力和一定的公关能力</text>
+  </view>
+  <view class='int_ft'>
+    <view class='ft_fav'>
+      <image src='../../images/fav.png'></image>
+      <text>收藏职位</text>
+    </view>
+    <view class='ft_apply'>
+      <button bindtap='btn'>立即应聘</button>
+    </view>
+  </view>
+</view>

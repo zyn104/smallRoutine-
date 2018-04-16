@@ -1,0 +1,36 @@
+<view class='container'>
+  <view class='search'>
+    <input placeholder='输入职位关键词、公司名称' size='12'/>
+    <icon size='20' type='search'></icon>   
+  </view>
+  <view class='recom'>
+    <view class='recom_div'>推荐</view>
+    <button bindtap='tomap'>地点</button>
+  </view>
+  
+  <view class='picwen' bindtap='details' wx:for='{{arr}}'>
+    <view class='picwen_top'>
+      <image src='../../images/jd.jpg'></image>
+    </view>
+    <view class='picwen_center'>
+      <view class='center_p'>{{item.rp}}</view>
+        {{item.details[0].size}} 丨 {{item.details[0].industry}}
+      </view>
+    <view class='picwen_bottom'>
+      <view class='bottom_w'>
+        <view>{{item.details[0].welfare[0]}}</view>
+        <view>{{item.details[0].welfare[1]}}</view>
+        <view>{{item.details[0].welfare[2]}}</view>
+        <view>{{item.details[0].welfare[3]}}</view>
+      </view>
+      <view class='bottom_p'>
+        <view class='bottom_p_s'>2296</view>
+        与我相关的职位
+      </view>
+    </view>
+  </view>
+  <view class='tabbar'>
+    <view bindtap='shou'>首页</view>
+    <view bindtap='me'>我的</view>
+  </view>   
+</view>

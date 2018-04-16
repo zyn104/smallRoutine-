@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/enterprise/enterprise",
+    "pages/registere/registere",
+    "pages/rpLogin/rpLogin",
+    "pages/rpRelease/rpRelease",
+    "pages/logs/logs",
+    "pages/myWork/myWork",
+    "pages/myMap/myMap",
+    "pages/wDetails/wDetails",
+    "pages/myJane/myJane",
+    "pages/workDetails/workDetails",
+    "pages/common/common"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

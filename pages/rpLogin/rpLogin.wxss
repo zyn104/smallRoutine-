@@ -1,0 +1,51 @@
+.con{
+  width: 90%;
+  padding: 5%;
+}
+.name{
+  width: 100%;
+  float: left;
+  line-height: 40px;
+  border-bottom: 1px #ccc solid;
+}
+input{
+  font-size: 12px;
+}
+.call{
+   width: 100%;
+  float: left;
+  line-height: 40px;
+  border-bottom: 1px #ccc solid;
+}
+button{
+  float: left;
+  width: 100%;
+  margin-top:5%;
+  
+}
+.confirm{
+  color: #999
+}
+radio-group{
+  margin-top: 5%;
+  float: left;
+  font-size: 12px;
+}
+.confi{
+  color: #fff;
+  background: dodgerblue;
+}
+.footer{
+  width: 100%;
+  float: left;
+  color: dodgerblue;
+  font-size: 14px;
+  margin-top: 5%;
+}
+.left{
+  width: 50%;
+  float: left;
+}
+.right{
+  float: right;
+}

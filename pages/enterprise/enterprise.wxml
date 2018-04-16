@@ -1,0 +1,5 @@
+<!--pages/enterprise/enterprise.wxml-->
+<view class='content'>
+<button class='register' bindtap='toreplaec'>企业注册</button>
+<button class='Sign' bindtap='Sign'>企业登录</button>
+</view>

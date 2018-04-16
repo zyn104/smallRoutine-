@@ -1,0 +1,90 @@
+.mian{
+  display:flex;
+   width: 100%;
+   flex-direction:row;
+  justify-content:center;
+  background: #f4f4f4;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.t_img{
+  width: 200rpx;
+  margin: 5rpx;
+  text-align: center;
+}
+.t_im{
+  width: 100rpx;  
+}
+.img_t{
+  width: 100rpx;
+  height: 100rpx;
+}
+.img_z{
+  width: 80rpx;
+  height: 20rpx;
+  margin-top: 40rpx
+}
+.img_l{
+  width: 90rpx;
+  height: 100rpx;
+}
+.text_t{
+  display: block;
+  font-size:12px;
+}
+.box_x{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e2e2e2;
+}
+.img_tel{
+  width: 20rpx;
+  height: 30rpx;
+  margin-left: 50rpx;
+
+  margin-top: 35rpx;
+  display: inline-block;
+  float: left;
+}
+.phone{
+  height:100rpx
+}
+ .suo{
+  border-top: 1px solid #e2e2e2;
+} 
+  .inp{
+   margin-left: 50rpx; 
+  float: left;
+  height: 100rpx;
+  font-size:12px;
+  color: #ADADAD;
+}  
+.int{
+  width: 50%;
+  float: left
+}
+.Code{
+  float: left;
+  width: 25%;
+  line-height: 50rpx;
+  background: #FA8E31;
+  text-align: center;
+  font-size:12px;
+  margin-left: 20rpx;
+  margin-top: 25rpx;
+  border-radius:3px; 
+  color: #fff;
+}
+.confirm{
+  width: 90%;
+  margin-top: 40rpx;
+  background: #FA8E31;
+  border-radius: 0;
+  color: #fff;
+}
+
+text[class="get"]::after {
+  border: 0;
+}

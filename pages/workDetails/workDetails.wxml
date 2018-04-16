@@ -1,0 +1,43 @@
+<!--workDetails.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="head-logo">
+      <image src="../../images/head-logo.png" alt="head-logo"></image>
+    </view>
+    <text class="hunting">猎聘</text>
+    <text class="fonts">让职场人更成功</text>
+  </view>
+  <view class="head">
+    <image src="../../images/people.png" alt="head-photo"></image>
+  </view>
+  <view class="list">
+    <view class="update" bindtap='resume'>
+      <view class="update-logo">
+        <image src="../../images/yg.svg"></image>
+      </view>
+      <text class="book">更新简历</text>
+      <text class="more">></text>
+    </view>
+    <view class="update">
+      <view class="update-logo">
+        <image src="../../images/yg.svg"></image>
+      </view>
+      <text class="book">应聘记录</text>
+      <text class="more">></text>
+    </view>
+    <view class="update collect">
+      <view class="update-logo">
+        <image src="../../images/sc.png"></image>
+      </view>
+      <text class="book">我的收藏</text>
+      <text class="more">></text>
+    </view>
+    <view class="update">
+      <view class="update-logo">
+        <image src="../../images/qh.png"></image>
+      </view>
+      <text class="book">切换账号</text>
+      <text class="more">></text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<!--logs.wxml-->
+<!-- <view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view> -->
+
+<view class='cont' style='width:{{bgw}}px;height:{{bgh}}px;background:#f4f4f4;'>
+<view class='mian'>
+<view class='t_img'>
+<image src='{{userInfo.avatarUrl}}' class='img_t'></image>
+<text class='text_t'>{{userInfo.nickName}}</text>
+</view>
+<view class='t_img t_im'>
+<image src='../../images/z.jpg' class='img_z'></image>
+</view>
+<view class='t_img'>
+<image src='../../images/l.jpg' class='img_l'></image>
+<text class='text_t'>猎聘同道</text>
+</view>
+</view>
+<view class='box_x'>
+<view class='phone'>
+<image src='../../images/tel.jpg' class='img_tel'></image>
+<input class='inp btn' type="text" placeholder='请输入手机号' maxlength='11'value="" bindinput ="mobileInput" ></input>  
+</view>
+<view class='phone suo'>
+<image src='../../images/suo.jpg' class='img_tel'></image>
+<input type='text' placeholder='请输入验证码' class='inp int' bindinput='aaa' value='{{aaa}}'></input>
+
+<text class='Code buttonget' disabled='{{disabled}}' data-id="2" bindtap="getVerificationCode">获取验证码</text>
+</view>
+</view>
+<button class='confirm' type="submit" bindtap='btnclick' >进入小程序</button> 
+</view>

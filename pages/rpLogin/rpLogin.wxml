@@ -1,0 +1,18 @@
+<!--pages/aa/aa.wxml-->  
+<view class='con'>
+<view class='name'>姓名<input class='btn'  type="text" placeholder='请输入预约人姓名' maxlength='12'value="" bindinput ="userNameInput" ></input>  </view>  
+<view class='call'>手机号<input class='btn' type="text" placeholder='请输入手机号' maxlength='11'value="" bindinput ="mobileInput" ></input></view>  
+<button class='confirm' type="submit" bindtap='btnclick' >点击完成验证</button>  
+ <!-- radiogroup 布局 -->
+<radio-group bindchange="radioChange" >
+    <label class="radio" >
+     <checkbox class='checkbox' checked='' bindtap='aa'></checkbox>我已阅读并同意智联招聘《用户服务协议》和《意思政策》
+    </label>
+  
+</radio-group>
+<button class='confi' type="submit" bindtap='btn' >登录</button>  
+<view class='footer'>
+<text class='left' bindtap='left'>立即登录</text>
+<text  class='right' bindtap='right'>忘记密码</text>
+</view>
+</view>

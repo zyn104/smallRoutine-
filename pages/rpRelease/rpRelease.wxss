@@ -1,0 +1,256 @@
+/* pages/rpRelease/rpRelease.wxss */
+.content{
+  width: 100%;
+  height: 100%;
+}
+.header{
+  width: 100%;
+  height: 120rpx;
+  background: #EEEFF1;
+  overflow: hidden;
+}
+.search{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-top: 20rpx
+}
+.search_img{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 20rpx;
+  float: left;
+}
+.search_inp{
+  float: left;
+  width: 80%;
+  height: 80rpx;
+  font-size:12px;
+}
+.mend{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.mend_title{
+  font-size: 12px;
+  line-height: 3;
+  color: #BFBFBF
+}
+.category{
+  display: flex;
+  flex-wrap:wrap;
+
+}
+.box{
+  width: 20%;
+  height: 70rpx;
+  margin: 15rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 14px;
+  color: #6E6E6E;
+  border: 1px solid #EFEFEF;
+}
+
+.Nature{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.lab{
+  display: block;
+  float: left;
+  line-height: 3;
+  font-size: 12px;
+}
+.Asterisk{
+  color: red
+}
+.Full{
+  float: left;
+  width: 119rpx;
+  border: 1px solid #80C3EB;
+  background: #D2E8F6;
+  line-height: 2.5; 
+  margin-left: 10rpx;
+  text-align: center;
+  font-size: 12px;
+}
+.picker{
+  background: #F3F9FC;
+  border: 1px solid #BDC8D2;
+}
+.salary{
+  width: 300rpx;
+  height: 70rpx;
+  text-align: left;
+  background: #F3F9FC;
+  border: 1px solid #BDC8D2;
+  text-indent: 12px;
+  
+}
+.custom{
+  float: left;
+  width: 210rpx;
+  height: 75rpx;
+  font-size: 14px;
+  margin-left: 10rpx;
+  border-radius: 3px;
+  background: #2F9DDF;
+  text-align: center;
+  color: #fff;
+}
+.text_r{
+  line-height: 2.5;
+  margin-left:10rpx;
+  margin-right: 10rpx; 
+  font-size: 12px;
+  display: block;
+  float: left;
+}
+.textarea{
+  width: 75%;
+  height: 150rpx;
+  background: #fff;
+  text-align: left;
+  border: 1px solid #CBCBCB;
+}
+ .bright-points{
+      width:750rpx;
+    }
+    .bright-points .bright-tit{
+      font-size:13px;
+      margin-left:15px;
+      color:#666;
+      padding:10px 0;
+    }
+
+
+  /* bright-fonts */
+    .bright-fonts{
+      padding-bottom: 20px;
+      padding-left:30px;
+    }
+    .bright-fonts .bright-con{
+      font-size:12px;
+      color:#020202;
+      margin-right:5px;
+    }
+    .bright-fonts .bright-note{
+      font-size:10px;
+      color:#f60;
+      padding-bottom: 10px;
+    }
+
+
+  /* job-ask */
+    .job-ask{
+      width:750rpx;
+    }
+    .job-ask-sizing{
+      width:88%;
+      margin:0 auto;
+     
+    }
+    .job-label{
+      font-size:10px;
+      color:#777;
+      background: #F3F9FC;
+      border: 1px solid #BDC8D2;
+      margin:0 5px 5px;
+      display: inline-block;
+    }
+.flex-item text{
+      margin: 3px 5px;
+      line-height: 2
+    }
+    /* work-place */
+      .work-place{
+        width:750rpx;
+        display: flex;
+        padding-top:20px;
+      }
+      .work-place icon{
+        color:red;
+        font-size:14px;
+        margin-left:10px;
+      }
+      .work-place text{
+        color:#888;
+        font-size:12px;
+        margin-left:5px;
+        padding-top:5px;
+        margin-right:10px;
+      }
+      .work-place button{
+        color:#fff;
+        font-size:12px;
+        margin-left:10px;
+        background-color: #2F9DDF;
+      }
+
+    /* work-adress */
+      .work-adress input{
+        width:300rpx;
+         background: #F3F9FC;
+       border: 1px solid #BDC8D2;
+       font-size: 12px;
+        padding-left:10px;
+      }
+      .work-adress button{
+        margin-left:10px;
+        width:100px;
+        padding:0;
+      }
+
+    /* publish-date */
+      .publish-date .calendar{
+       overflow: hidden;
+        width:300rpx;
+         background: #F3F9FC;
+  border: 1px solid #BDC8D2;
+      }
+      .da{
+        float: left;
+        width:85%;
+        line-height: 3;
+        font-size: 12px;
+        text-indent: 5px;
+        color: #3D8FC1;
+        border:none;
+      }
+       
+      .img_d{
+        display: block;
+        width:12px;
+        height: 16px;
+        margin-top: 20rpx;
+        float: left;
+      }
+      
+      .publish-date .careful{
+        color:#f00;
+        font-size:10px;
+       
+      }
+.publish-date{
+ margin-bottom: 50rpx;
+}
+.section{
+   background:#CABBC7;
+   margin:20rpx;
+   padding:20rpx
+
+}
+
+ .active-tag .flex-item{
+   background: #c8321e;
+   color:#fff;
+ }

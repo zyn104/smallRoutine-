@@ -1,0 +1,109 @@
+<!--pages/rpRelease/rpRelease.wxml-->
+<view class='centent'>
+<view class='header'>
+<view class='search'><image src='../../images/fangd.jpg' class='search_img'></image><input type='text' class='search_inp' placeholder='输入您要招的职位名称，如“销售”'></input></view>
+</view>
+<view class='mend'>
+<view class='mend_title'>热门职业推荐</view>
+<view class='category'>
+<view class='box'>服务员</view>
+<view class='box'>营业员</view>
+<view class='box'>客服</view>
+<view class='box'>销售代表</view>
+<view class='box'>促销员</view>
+<view class='box'>文员</view>
+<view class='box'>迎宾</view>
+<view class='box'>前台</view>
+<view class='box'>收银员</view>
+<view class='box'>保安</view>
+</view>
+</view>
+<view class='Nature'>
+<label class='lab'><text class='Asterisk'>*</text>职业性质</label>
+<view class='Full'>全职</view>
+<view class='Full Part'>兼职</view>
+<view class='Full Internship'>实习</view>
+<view class='Full Campus'>校园</view>
+</view>
+
+<view class='Nature'>
+<label class='lab'><text class='Asterisk'>*</text>招聘岗位</label>
+<view class='Full'>全职</view>
+</view>
+<view class='Nature'>
+<label class='lab'><text class='Asterisk'>*</text>招聘要求</label>
+<picker class='Full picker' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="weui-input">{{array[index]}}</view>
+            </picker>
+<text class='text_r'>人</text>
+<picker class='Full picker' bindchange="bindPicker" value="{{num}}" range="{{arr}}">
+              <view class="weui-input">{{arr[num]}}</view>
+            </picker>
+<text class='text_r'>含以上</text>
+<picker class='Full picker' bindchange="salary" value="{{n}}" range="{{ex}}">
+              <view class="weui-input">{{ex[n]}}</view>
+            </picker>
+</view>
+
+<view class='Nature'>
+<label class='lab'><text class='Asterisk'>*</text>职位月薪</label>
+<picker class='Full salary' bindchange="experience" value="{{aa}}" range="{{qu}}">
+              <view class="weui-input">{{qu[aa]}}</view>
+            </picker>
+<!-- <input class='Full salary' placeholder='请选择给薪区间'></input> -->
+<input class='custom' placeholder='自定义月薪区间' placeholder-style='color:#fff'></input>
+</view>
+<view class='Nature'>
+<label class='lab'><text class='Asterisk'>*</text>职位描述</label>
+<textarea class='Full textarea'></textarea>
+</view>
+<view class='Nature'>
+<label class='lab'><text class='Asterisk'>*</text>公司简介</label>
+<textarea class='Full textarea'></textarea>
+</view>
+
+
+<view class="bright-points">
+    <text class="bright-tit">职位亮点标签：</text>
+  </view>
+  <view class="bright-fonts">
+    <text class="bright-con">选择职位亮点，提升职位吸引力，有效增加职位投递!</text>
+    <text class="bright-note">(最多可选择八个标签)</text>
+  </view>
+  <view class="job-ask">
+    <view class="job-ask-sizing">
+      <view class="job-label appointent-date-div {{item.state==1?'active-tag':''}}" bindtap="{{bbb.length!=9?'select_date':'ddd'}}"  wx:for="{{datess}}" data-key='{{index}}'>
+      <view class="flex-item">
+        <text>{{item.data_name}}</text>
+        </view>
+      </view>
+     
+    </view>
+    
+  </view>
+  <view class="work-place">
+    <icon>*</icon>
+    <text>工作地点</text>
+    <button>添加/删除工作地点</button>
+  </view>
+  <view class="work-place work-adress">
+    <icon>*</icon>
+    <text>工作地址</text>
+    <input type='text' value='{{name}}'></input><button>标注地理定位</button>
+  </view> 
+  <view class="work-place work-adress publish-date">
+    <icon>*</icon>
+    <text>发布截止日期</text>
+    <view class="calendar">
+     <picker  class='da' mode="date" value="{{date}}" start="1978-01-01" end="2019-01-09" bindchange="bindDateChange">  
+    <view>  
+       {{dates}}  
+    </view>  
+  </picker>  
+      <image src="../../images/sb.svg" class='img_d'></image>
+    </view>
+    <text class="careful">请根据需求选择截止时间,不得超过有效期 2019-01-09</text>
+  </view>  
+
+
+</view>

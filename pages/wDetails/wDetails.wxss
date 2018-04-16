@@ -1,0 +1,123 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.header{
+  width: 90%;
+  display: flex;
+  font-size: 10px;
+  color: #797979;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.header image{
+  width: 30px;
+  height: 30px;
+}
+.header .head_h1{
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+}
+.obj{
+  width: 90%;
+  border-bottom: 5px solid #F8F8F8;
+}
+.obj .obj_con{
+  margin-bottom: 10px;
+}
+.obj .obj_tx{
+  color:  #FF6644;
+  font-size: 15px;
+}
+.obj .obj_fk{
+  background: #CECECE;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.obj .studyhist{
+  font-size: 15px;
+  color: #444444;
+  display: flex;
+  margin-bottom: 10px;
+}
+.obj .studyhist view{
+  margin-right: 10px;
+  line-height: 25px;
+}
+.obj .studyhist image{
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.obj .address{
+  margin-bottom: 10px;
+  display: flex;
+}
+.obj .address image{
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.add_ri .add_ri_tx{
+  color: #828282;
+}
+.obj .address text{
+  display: inline-block;
+  font-size: 12px;
+}
+.introduce{
+  width: 90%;
+  font-size: 15px;
+  border-bottom: 3px solid #F8F8F8; 
+}
+.introduce text{
+  display: block;
+  margin-bottom: 5px;
+}
+.introduce .int_head{
+  position: relative;
+  margin: 10px 0 10px 0;
+}
+.introduce .jobs{
+  margin-bottom: 10px;
+}
+.yell{
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  width: 6px;
+  height: 13px;
+  background: #FD5950
+}
+.int_ft{
+  width: 90%;
+  display: flex;
+}
+.int_ft .ft_fav{
+  width: 30%;
+  font-size: 15px;
+  color: #CACACA;
+  text-align: center
+}
+.int_ft .ft_apply{
+  width: 70%;
+}
+.int_ft .ft_apply button{
+  background: #FF6644;
+  color: white;
+}
+.int_ft .ft_fav image{
+  width: 20px;
+  height: 18px;
+  display: block;
+  margin: 5px auto;
+}

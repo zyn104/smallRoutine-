@@ -1,0 +1,16 @@
+
+<view class='entry' style='width:{{bgw}}px;height:{{bgh}}px;background:#f4f4f4;'>  
+<view class='entry_w'>
+<view class='entry_wn' bindtap='btn1'>
+<image src='../../images/g.jpg' class='entry_m'></image>
+<text>我想找工作</text>
+</view>
+</view>
+<view class='entry_w'>
+<view class='entry_wn'bindtap='btn2'>
+<image src='../../images/s.jpg' class='entry_m'></image>
+<text>我想招人</text>
+</view>
+</view>
+</view>
+
